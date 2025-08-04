@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f0f8ff; /* Light blue background */
+  background: linear-gradient(to bottom, #f0f8ff, #4682b4); /* Gradient background */
   margin: 0;
   padding: 0;
 }
@@ -13,12 +13,9 @@ body {
   height: 40vmin;
   pointer-events: none;
   margin-left: 20px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .App-header {
@@ -36,6 +33,7 @@ body {
   color: #ff4500; /* Orange red */
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 .App-link:hover {
@@ -77,10 +75,11 @@ h1 {
   color: #00008b; /* Dark blue */
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 button {
-  background-color: #4682b4; /* Steel blue */
+  background: linear-gradient(to right, #4682b4, #5a9bd4); /* Gradient background */
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -91,7 +90,32 @@ button {
 }
 
 button:hover {
-  background-color: #5a9bd4; /* Lighter steel blue */
+  background: linear-gradient(to right, #5a9bd4, #4682b4); /* Reverse gradient */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background-color: #4682b4;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+table tr:hover {
+  background-color: #ffa07a;
 }
 
 @keyframes App-logo-spin {
