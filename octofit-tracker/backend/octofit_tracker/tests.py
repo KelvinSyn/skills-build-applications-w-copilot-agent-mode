@@ -1,5 +1,14 @@
 from django.test import TestCase
 from .models import User, Team, Activity, Leaderboard, Workout
+import sys
+
+class PythonVersionTest(TestCase):
+    def test_python_version_is_latest(self):
+        """Test that Python version is 3.13.x (latest)"""
+        python_version = sys.version_info
+        self.assertEqual(python_version.major, 3)
+        self.assertGreaterEqual(python_version.minor, 13)
+        print(f"Python version: {python_version.major}.{python_version.minor}.{python_version.micro}")
 
 class UserModelTest(TestCase):
     def test_user_creation(self):
