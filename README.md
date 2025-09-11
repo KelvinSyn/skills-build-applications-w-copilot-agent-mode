@@ -28,6 +28,7 @@ In this exercise, we will prompt GitHub Copilot agent mode to create us a comple
 - **What you'll learn**: We'll introduce GitHub Copilot agent mode and how to use it for application development.
 - **What you'll build**: You'll use GitHub Copilot agent mode to create a fitness application as the gym teacher of a high school.
 - **Prerequisites**: Skills Exercise: <a href="https://github.com/skills/getting-started-with-github-copilot">Getting Started with GitHub Copilot</a>.
+- **Technical Requirements**: Python 3.13+ (automatically installed in devcontainer), Django 4.1+, Node.js for React frontend
 - **How long**: This course takes less than one hour to complete.
 
 In this exercise, you will:
