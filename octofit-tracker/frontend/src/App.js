@@ -47,7 +47,22 @@ function App() {
             <Route path="/teams" element={<Teams />} />
             <Route path="/users" element={<Users />} />
             <Route path="/workouts" element={<Workouts />} />
-            <Route path="/" element={<h1>Welcome to OctoFit Tracker</h1>} />
+            <Route
+              path="/"
+              element={
+                <>
+                  <h1>Welcome to OctoFit Tracker</h1>
+                  <a
+                    className="btn btn-danger mt-3"
+                    href="https://www.youtube.com/@GitHub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit our YouTube channel
+                  </a>
+                </>
+              }
+            />
           </Routes>
         </div>
       </div>
